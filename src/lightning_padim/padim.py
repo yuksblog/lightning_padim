@@ -105,9 +105,6 @@ class Padim(L.LightningModule):
 
         return anomaly_map
 
-    def configure_callbacks(self):
-        return [PadimCallback()]
-
     def configure_optimizers(self):
         # Padim doesn't require optimization.
         return None
